@@ -1,7 +1,8 @@
+
 import axios from 'axios';
 
 const instance = axios.create({
-  baseURL: 'https://task-5-0g50.onrender.com/api' 
+  baseURL: 'https://task-5-0g50.onrender.com/api' // ✅ Render live backend
 });
 
 instance.interceptors.request.use(
@@ -12,6 +13,5 @@ instance.interceptors.request.use(
   },
   (error) => Promise.reject(error)
 );
-
 
 export default instance;
