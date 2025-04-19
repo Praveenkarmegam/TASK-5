@@ -9,7 +9,7 @@ function ActivateAccount() {
   useEffect(() => {
     async function activate() {
       try {
-        const res = await axios.get(`/activate/${token}`);
+        const res = await axios.get(`/auth/activate/${token}`);
         alert(res.data.message);
         navigate('/login');
       } catch (err) {
