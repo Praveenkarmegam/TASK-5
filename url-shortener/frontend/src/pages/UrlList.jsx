@@ -46,7 +46,7 @@ function UrlList() {
               <TableRow key={url._id}>
                 <TableCell>
                   <Link
-                    href={`http://localhost:5000/u/${url.shortCode}`}
+                    href={`https://task-5-0g50.onrender.com/u/${url.shortCode}`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >

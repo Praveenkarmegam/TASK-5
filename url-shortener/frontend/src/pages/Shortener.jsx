@@ -1,4 +1,3 @@
-// ✅ MUI Enhanced: Shortener.jsx
 import React, { useState } from 'react';
 import axios from '../axiosConfig';
 import { TextField, Button, Alert, Box, Snackbar, Link } from '@mui/material';
@@ -42,11 +41,11 @@ function Shortener({ onShorten }) {
         <Alert severity="success" sx={{ mt: 2 }}>
           Short URL:{' '}
           <Link
-            href={`http://localhost:5000/u/${shortCode}`}
+            href={`https://task-5-0g50.onrender.com/u/${shortCode}`}
             target="_blank"
             rel="noopener noreferrer"
           >
-            http://localhost:5000/u/{shortCode}
+            https://task-5-0g50.onrender.com/u/{shortCode}
           </Link>
         </Alert>
       )}
